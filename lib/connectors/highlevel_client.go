@@ -72,7 +72,7 @@ func (c *highLevelClient) SetBasicAuth(username string, password string) {
 }
 
 func (c *highLevelClient) SetBearerAuth(token string) {
-	c.client.SetAuthToken(token)
+	c.client.SetBearerAuth(token)
 }
 
 //GetAll gets the list of all active connectors
